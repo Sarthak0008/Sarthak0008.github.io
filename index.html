@@ -44,12 +44,15 @@
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />     
 
    <!-- script
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153937526-1"></script> -->
@@ -239,6 +242,10 @@
    <div class="progress percent95"><span>95%</span></div>
 					     <strong>Hibernate</strong>
 					</li>
+					<li>
+						<div class="progress percent85"><span>85%</span></div>
+						<strong>MongoDB</strong>
+					</li>
 
 				
 					<li>
@@ -269,10 +276,7 @@
                         <div class="progress percent90"><span>90%</span></div>
                         <strong>CSS</strong>
                     </li>
-					<li>
-						                        <div class="progress percent85"><span>85%</span></div>
-												<strong>Bootstrap</strong>
-											</li>
+			
 				
 	
 
@@ -337,34 +341,24 @@
    	</div>
 
    </section> <!-- /process-->   
-   
+    <br>
    <section id="skills">
 	<div id="skills" class="container">
    <div class="row button-section">
 	   <div class="col-twelve">
-		<h1>Github</h1>
-		<div align="center">
-
-			<!-- [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=sarthak0008&theme=neon-dark)](https://git.io/streak-stats) -->
-			</div>
-			
-			<!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sarthak0008&theme=radical&show_icons=true)](https://github.com/anuraghazra/github-readme-stats) -->
-			<p align="center">
-			<a href="https://github.com/sarthak0008"><img src="https://github-readme-stats.vercel.app/api?username=sarthak0008&theme=radical&show_icons=true&hide=&count_private=true&hide_border=true&show_icons=true" alt="sarthak0008's GitHub stats" /></a>
-			</p>
-			<!-- title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=000000& -->
-			
-			<p align="center">
-			<a href="https://github.com/sarthak0008" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sarthak0008&theme=radical" alt="Top Langs" ></a>
-			<!-- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sarthak0008&theme=radical) -->
-			</p>
-			
-	 <!-- <a href="Ali Solanki – Solidity _ Smart Contract Developer.pdf" title="Download CV (Solidity)" class="button button-primary">Download CV (Solidity)</a> -->
+		<h2 id="gith" class="section__title">My Github Contribution</h2>
+		<!-- Prepare a container for your calendar. -->
+		<div class="calendar">
+		  <!-- Loading stuff -->
+		  Loading the data just for you.
+		</div> 
+		<!-- <a href="Ali Solanki – Solidity _ Smart Contract Developer.pdf" title="Download CV (Solidity)" class="button button-primary">Download CV (Solidity)</a> -->
 	   </div>   		
    </div>
 
-</section>
-
+</section> <!-- /process-->   
+   
+  
 
    <!-- resume Section
    ================================================== -->
@@ -1063,3 +1057,14 @@
 </body>
 
 </html>
+<script>
+GitHubCalendar(".calendar", "sarthak0008");
+// or enable responsive functionality:
+GitHubCalendar(".calendar", "sarthak0008", { responsive: true });
+GitHubCalendar(".calendar", "sarthak0008", {
+   proxy (sarthak0008) {
+	 return fetch(`https://your-proxy.com/github?user=${sarthak0008}`)
+   }
+}).then(r => r.text())
+</script>
+
