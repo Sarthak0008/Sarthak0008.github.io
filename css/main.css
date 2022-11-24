@@ -1121,7 +1121,7 @@ header .logo a {
 }
 header{
 	background-color: black;
-	width: 220px;
+	width: 200px;
 	height:66px;
 	display: inline;
 }
@@ -1263,30 +1263,110 @@ header{
 	color: #FF0077;
 }
 
+/* new nav */
+#nav1{
+	width: 90%;
+	margin: auto;
+	border-radius: 20px;
+	border: 1px solid red;
+	height: 60px;
+	position: fixed;  z-index: 9999;
+	top: 8px;
+	left:5%;
+	/* gap: 25px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(51,78,212);
+  background: radial-gradient(circle, rgba(51,78,212,1) 0%, rgba(88,111,226,1) 77%, rgba(238,177,177,1) 100%);
+  }
+  
+  nav div{
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 3%;
+  }
+  
+  nav a{
+	text-decoration: none;
+	font-size: 26px;
+	color: white;
+  }
+  
+  /* body{
+	font-family: sans-sarif;
+	height: 400vh;
+  } */
+  
+  .resume{
+	background: yellow;
+	color: black;
+	padding: 5px;
+	border-radius: 15px;
+  }
+
 /**
  * responsive:
  * header styles
  * --------------------------------------------------------------- 
  */
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:2524px) {
 	header .top-bar {
 		/* left: 60px; */
 	}
+	header {
+		display: none;
+		visibility: hidden;
+	}
+	
+
+
 }
 @media only screen and (max-width:768px) {
 	header .top-bar {
 		/* left: 50px; */
 	}
+	header {
+		display: block;
+		visibility: visible;
+	}
+	#nav1{
+		display: none;
+		visibility: hidden;
+	}
+	
 }
 @media only screen and (max-width:600px) {
 	header .top-bar {
 		/* left: 35px; */
 	}
+	header {
+		display: block;
+		visibility: visible;
+	}
+	/* #nav1{
+		display: none;
+		visibility: hidden;
+	} */
+
+	
+	
 }
 @media only screen and (max-width:400px) {
 	header .top-bar {
 		/* left: 25px; */
 	}
+	header {
+		display: block;
+		visibility: visible;
+	}
+	/* #nav1{
+		display: none;
+		visibility: hidden;
+	} */
+	
 }
 
 
@@ -1483,6 +1563,7 @@ header{
 	.intro-social {
 		font-size: 3.4rem;
 	}
+
 }
 
 
@@ -1524,15 +1605,20 @@ header{
 }
 
 /* =========================================LOGO======================================================= */
+#skilltech{
+	padding-top: 10%;
+    /* margin-top: 10%; */
+
+}
 .LOGO-info{
 	display: grid;
 	grid-template-columns: repeat(5,100px);
 	grid-template-rows: repeat(1,100px);
 	gap: 50px;
-	padding-left: 20px;
+	padding-left: 6%;
 	/* margin: auto;
 	text-align: center; */
-	margin-bottom: 30px;
+	margin-bottom: 100px;
 }
 
 .LOGO-info img{
@@ -1561,11 +1647,11 @@ header{
 @media only screen and (max-width:768px) {
 	.LOGO-info{
 		display: grid;
-		grid-template-columns: repeat(2,80px);
-		grid-template-rows: repeat(3,80px);
-		display: block;
-		/* gap: 50px;
-		padding-left: 20px; */
+		grid-template-columns: repeat(4,90px);
+		grid-template-rows: repeat(auto,80px);
+		/* display: block; */
+		 gap: 50px; 
+		padding-left: 15%; 
 		/* margin: auto;
 		text-align: center; */
 		/* margin-bottom: 30px; */
@@ -1581,14 +1667,14 @@ header{
 	.LOGO-info{
 		display: grid;
 	
-		grid-template-columns: repeat(1,60px);
-		grid-template-rows: repeat(5,60px);
-		gap: 50px;
-		padding-left: 20px;
+		grid-template-columns: repeat(3,80px);
+		grid-template-rows: repeat(auto,60px);
+		gap: 40px;
+		/* padding-left: px; */
 		 margin: auto;
 		text-align: center; 
 		 margin-bottom: 30px;
-		 display: block;
+		 /* display: block; */
 	}
 	/* .LOGO-info img {
 		height: 20px;
@@ -1596,6 +1682,21 @@ header{
 		/* font-size: 2.4rem; */
 	/* } */
 }
+@media only screen and (max-width:470px){
+	.LOGO-info{
+		display: grid;
+	
+		grid-template-columns: repeat(2,60px);
+		grid-template-rows: repeat(auto,60px);
+		gap: 40px;
+		/* padding-left: px; */
+		 margin: auto;
+		text-align: center; 
+		 margin-bottom: 30px;
+		 /* display: block; */
+	}
+}
+
 
 
 /* ===================================================================================================== */
@@ -1794,6 +1895,130 @@ header{
 		margin-right: 0;
 	}
 }
+#port{
+	/* border: 2px solid pink; */
+	width: 85%;
+	margin: auto;
+	height: auto;
+	display:flex;
+	gap: 1rem;
+	justify-content: space-between;
+   align-items: center;
+
+}
+#port>#b1{
+	height: 100%;
+	width: 70%;
+	/* border: 1px solid red; */
+}
+#port>#b2{
+	height: 100%;
+	width: 70%;
+}
+.logo3>img{
+	height: 100%;
+	background-image:url('../images/logo.png');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75% 85% ;
+	width: 100%;
+}
+.logo2>img{
+	height: 100%;
+	background-image:url('../images/clockify.png');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75% 85% ;
+	width: 100%;
+}
+.logo1>img{
+	height: 100%;
+	background-image:url('../images/Screenshot\ \(94\).png');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75% 85% ;
+	width: 100%;
+}
+.logo4>img{
+	height: 100%;
+	background-image:url('../images/Screenshot\ \(93\).png');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75% 85% ;
+	width: 100%;
+}
+/* #port>#b2 img{
+	height: 100%;
+	background-image:url('../images/clockify.png');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75% 85% ;
+	width: 100%;
+} */
+#skilltech>h2{
+	display: flex;
+	justify-content: center;
+	color: #FF0077;
+	padding-top: 30px;
+}
+#project{
+	padding-top: 60px;
+}
+
+#project>h3{
+	margin: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#project>h1{
+	margin: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #7b6767;
+}
+#project>h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+	color: #FF0077;
+}
+@media only screen and (max-width:768px){
+   #port{
+	display: flex;
+	width: 100%;
+	
+	flex-direction: column-reverse;
+   }
+}
+.linkbox{
+	display: flex;
+	justify-content: space-evenly;
+	
+}
+.linkbox>a{
+	border: 1px solid blue;
+    padding-left: 9%;
+	padding-right: 10%;
+	color: rgb(221, 244, 246);
+	background-color: #cc005f;
+	border-radius: 10px;
+	box-shadow: rgb(146, 106, 184);
+}
+.rotateimg180 {
+	-webkit-transform:rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+  }
 @media only screen and (max-width:600px) {
 	.intro-info {
 		text-align: center;
