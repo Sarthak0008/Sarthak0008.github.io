@@ -1121,8 +1121,8 @@ header .logo a {
 }
 header{
 	background-color: black;
-	width: 200px;
-	height:66px;
+	width: 170px;
+	height:67px;
 	display: inline;
 }
 
@@ -1142,7 +1142,7 @@ header{
 .menu-toggle span {
 	display: block;
 	background-color: #FF0077;
-	width: 24px;
+	width: 25px;
 	height: 3px;
 	margin-top: -1.5px;
 	font: 0/0 a;
@@ -1265,20 +1265,21 @@ header{
 
 /* new nav */
 #nav1{
-	width: 90%;
+	width: 100%;
 	margin: auto;
-	border-radius: 20px;
-	border: 1px solid red;
+	border-radius: 2px;
+	border: solid rgb(111, 108, 108);
 	height: 60px;
 	position: fixed;  z-index: 9999;
-	top: 8px;
-	left:5%;
+	/* top: 0px;git add  */
+	/* left:5%; */
 	/* gap: 25px; */
 	display: flex;
+	color: white;
 	align-items: center;
 	justify-content: center;
-	background: rgb(51,78,212);
-  background: radial-gradient(circle, rgba(51,78,212,1) 0%, rgba(88,111,226,1) 77%, rgba(238,177,177,1) 100%);
+	background: rgb(133, 133, 135);
+  /* background:black; */
   }
   
   nav div{
@@ -1287,12 +1288,13 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	gap: 3%;
+	color: white;
   }
   
   nav a{
-	text-decoration: none;
+	/* text-decoration: none; */
 	font-size: 26px;
-	color: white;
+	color: rgb(146, 33, 33);
   }
   
   /* body{
@@ -1301,7 +1303,7 @@ header{
   } */
   
   .resume{
-	background: yellow;
+	background:  rgb(221, 230, 149);
 	color: black;
 	padding: 5px;
 	border-radius: 15px;
@@ -1644,7 +1646,7 @@ header{
 	
 	}
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:788px) {
 	.LOGO-info{
 		display: grid;
 		grid-template-columns: repeat(4,90px);
@@ -1663,16 +1665,18 @@ header{
 	/* } */
 	
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:640px) {
 	.LOGO-info{
 		display: grid;
 	
-		grid-template-columns: repeat(3,80px);
-		grid-template-rows: repeat(auto,60px);
+		grid-template-columns: repeat(3,90px);
+		grid-template-rows: repeat(auto,80px);
 		gap: 40px;
 		/* padding-left: px; */
 		 margin: auto;
+		 padding-left:2%;
 		text-align: center; 
+		justify-content: center;
 		 margin-bottom: 30px;
 		 /* display: block; */
 	}
@@ -1682,14 +1686,15 @@ header{
 		/* font-size: 2.4rem; */
 	/* } */
 }
-@media only screen and (max-width:470px){
+@media only screen and (max-width:440px){
 	.LOGO-info{
 		display: grid;
 	
-		grid-template-columns: repeat(2,60px);
-		grid-template-rows: repeat(auto,60px);
+		grid-template-columns: repeat(2,80px);
+		grid-template-rows: repeat(auto,80px);
 		gap: 40px;
-		/* padding-left: px; */
+		padding-left:2%;
+		justify-content: center;
 		 margin: auto;
 		text-align: center; 
 		 margin-bottom: 30px;
