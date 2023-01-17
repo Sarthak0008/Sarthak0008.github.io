@@ -1267,20 +1267,22 @@ header{
 #nav1{
 	width: 100%;
 	margin: auto;
-	border-radius: 2px;
-	border: solid rgb(111, 108, 108);
+	border-radius: 1px;
+	border:  solid rgb(92, 87, 87);
 	height: 60px;
 	position: fixed;  z-index: 9999;
 	/* top: 0px;git add  */
 	/* left:5%; */
 	/* gap: 25px; */
+	font-family: "poppins-medium", sans-serif;
 	display: flex;
 	color: white;
 	align-items: center;
 	justify-content: center;
-	background: rgb(133, 133, 135);
+	background: rgb(97, 97, 99);
   /* background:black; */
   }
+ 
   
   nav div{
 	width: 80%;
@@ -1931,7 +1933,7 @@ header{
 }
 .logo2>img{
 	height: 100%;
-	background-image:url('../images/clockify.png');
+	background-image:url('../images/trip\ makers.png');
     background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
